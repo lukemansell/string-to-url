@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Diacritics" Version="3.3.10" />
+      <PackageReference Include="Stax.StringSanitizer" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>
