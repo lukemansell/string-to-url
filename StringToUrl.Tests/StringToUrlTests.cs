@@ -1,8 +1,8 @@
 using FluentAssertions;
-using StringToUrl.StringToUrl.Extensions;
+using StringToUrl.Extensions;
 using Xunit;
 
-namespace Tests;
+namespace StringToUrl.Tests;
 
 public class StringToUrlTests
 {

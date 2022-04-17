@@ -5,6 +5,10 @@
         <Nullable>enable</Nullable>
 
         <IsPackable>false</IsPackable>
+
+        <AssemblyName>StringToUrl.Tests</AssemblyName>
+
+        <RootNamespace>StringToUrl.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

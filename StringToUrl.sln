@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToUrl", "StringToUrl\StringToUrl.csproj", "{FE3B3152-EAE1-409B-91E2-3B8FD2E6C820}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{B21376AF-031B-43FD-969F-9E50151F808E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringToUrl.Tests", "StringToUrl.Tests\StringToUrl.Tests.csproj", "{B21376AF-031B-43FD-969F-9E50151F808E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

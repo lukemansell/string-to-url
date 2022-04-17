@@ -1,6 +1,6 @@
-﻿using StringToUrl.StringToUrl.Enum;
+﻿using StringToUrl.Enum;
 
-namespace StringToUrl.StringToUrl.Model;
+namespace StringToUrl.Model;
 
 public class UrlOptions
 {

@@ -1,7 +1,7 @@
-﻿using StringToUrl.StringToUrl.Model;
-using StringToUrl.StringToUrl.Service;
+﻿using StringToUrl.Model;
+using StringToUrl.Service;
 
-namespace StringToUrl.StringToUrl.Extensions;
+namespace StringToUrl.Extensions;
 
 public static class StringExtensions
 {

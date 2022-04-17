@@ -1,4 +1,4 @@
-﻿namespace StringToUrl.StringToUrl.Enum;
+﻿namespace StringToUrl.Enum;
 
 public enum StringCase
 {

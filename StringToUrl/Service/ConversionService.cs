@@ -2,10 +2,10 @@
 using Diacritics.Extensions;
 using StringSanitizer.StringSanitizer;
 using StringSanitizer.StringSanitizer.Enums;
-using StringToUrl.StringToUrl.Enum;
-using StringToUrl.StringToUrl.Model;
+using StringToUrl.Enum;
+using StringToUrl.Model;
 
-namespace StringToUrl.StringToUrl.Service;
+namespace StringToUrl.Service;
 
 public static class ConversionService
 {
@@ -55,6 +55,6 @@ public static class ConversionService
 
     private static string TrimString(string input, int maxLength)
     {
-        return input[..maxLength];
+        return input.Substring(0, maxLength);
     }
 }
