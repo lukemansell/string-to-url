@@ -1,8 +1,5 @@
-﻿using System.Text.RegularExpressions;
-using Diacritics.Extensions;
-using StringSanitizer.StringSanitizer;
-using StringSanitizer.StringSanitizer.Enums;
-using StringToUrl.Enum;
+﻿using StringToUrl.Enum;
+using StringToUrl.Helpers;
 using StringToUrl.Model;
 
 namespace StringToUrl.Service;
@@ -13,48 +10,22 @@ public static class ConversionService
         string input,
         UrlOptions options)
     {
-        var url = RemoveDiacritics(input);
+        var url = ConversionHelper.RemoveDiacritics(input);
 
-        url = RemoveNonAlphanumericCharacters(url);
+        url = ConversionHelper.RemoveNonAlphanumericCharacters(url);
         
-        url = ReplaceSpaces(url, options);
+        url = ConversionHelper.ReplaceSpaces(url, options);
         
         if (options.Case != StringCase.UNCHANGED)
         {
-            url = ChangeCase(url, options.Case);
+            url = ConversionHelper.ChangeCase(url, options.Case);
         }
 
         if (options.MaxLength != 0)
         {
-            url = TrimString(url, options.MaxLength);
+            url = ConversionHelper.TrimString(url, options);
         }
 
-        return url;
-    }
-
-    private static string RemoveNonAlphanumericCharacters(string input)
-    {
-        return input.SanitizeNonAlphanumeric(SanitizeSpaces.False);
-    }
-
-    private static string ChangeCase(string input, StringCase caseOption)
-    {
-        return caseOption == StringCase.LOWER ? input.ToLower() : input.ToUpper();
-    }
-
-    private static string ReplaceSpaces(string input, UrlOptions options)
-    {
-        var url = Regex.Replace(input, "( )", options.SpaceReplacementCharacter);
-        return Regex.Replace(url, @"\-+","-");
-    }
-
-    private static string RemoveDiacritics(string input)
-    {
-        return input.RemoveDiacritics();
-    }
-
-    private static string TrimString(string input, int maxLength)
-    {
-        return input.Substring(0, maxLength);
+        return options.Prepend + url + options.Append;
     }
 }
