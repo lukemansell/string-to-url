@@ -10,7 +10,7 @@ Output: ```charlie-puth-thats-hilarious```
 
 ### Why I have written this
 
-This is a common feature I use for generating URLs from strings which could be of use for others.
+This is a common feature I use for generating URLs from strings which could be of use for others. Replacing diacritics, cleaning out non alphanumeric characters and properly formatting a string into a proper URL/path can be fiddly. This library helps solve that by making it as easy as calling an extension method to string.
 
 ### How to use / what this does
 
