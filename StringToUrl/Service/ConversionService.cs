@@ -16,12 +16,12 @@ public static class ConversionService
         
         url = ConversionHelper.ReplaceSpaces(url, options);
         
-        if (options.Case != StringCase.UNCHANGED)
+        if (options.Case != StringCase.Unchanged)
         {
             url = ConversionHelper.ChangeCase(url, options.Case);
         }
 
-        if (options.MaxLength != 0)
+        if (options.MaxLength != 0 && options.MaxLength > 0)
         {
             url = ConversionHelper.TrimString(url, options);
         }

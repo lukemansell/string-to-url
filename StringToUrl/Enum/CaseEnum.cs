@@ -2,7 +2,7 @@
 
 public enum StringCase
 {
-    UPPER,
-    LOWER,
-    UNCHANGED
+    Upper,
+    Lower,
+    Unchanged
 }
