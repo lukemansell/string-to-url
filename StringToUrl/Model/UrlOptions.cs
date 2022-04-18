@@ -16,7 +16,7 @@ public class UrlOptions
     /// <summary>
     /// Override the case which the output string is.
     /// </summary>
-    public StringCase Case { get; set; } = StringCase.LOWER;
+    public StringCase Case { get; set; } = StringCase.Lower;
 
     /// <summary>
     /// The max length you want a URL to be. If set, the URL will be cut off after this length.

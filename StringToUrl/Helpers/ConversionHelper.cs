@@ -16,7 +16,7 @@ public static class ConversionHelper
 
     public static string ChangeCase(string input, StringCase caseOption)
     {
-        return caseOption == StringCase.LOWER ? input.ToLower() : input.ToUpper();
+        return caseOption == StringCase.Lower ? input.ToLower() : input.ToUpper();
     }
 
     public static string ReplaceSpaces(string input, UrlOptions options)

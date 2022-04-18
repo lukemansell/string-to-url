@@ -1,4 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
 using FluentAssertions;
 using StringToUrl.Enum;
 using StringToUrl.Extensions;
@@ -35,7 +34,7 @@ public class StringToUrlTests
         // Arrange
         var options = new UrlOptions()
         {
-            Case = StringCase.UPPER
+            Case = StringCase.Upper
         };
         
         // Act
@@ -84,7 +83,22 @@ public class StringToUrlTests
         // Assert
         result.Should().BeEquivalentTo(expected);
     }
+    
+    [Theory]
+    [InlineData("@#$@#$@#", "")]
+    [InlineData("Song title! - By Artist!", "song-title-by-artist")]
+    [InlineData("Song title (feat. Artist2) - By Artist1.", "song-title-feat-artist2-by-artist1")]
+    public void Invalid_Characters_Are_Stripped_Out_In_Generated_Url(string input, string expected)
+    {
+        // Arrange
 
+        // Act
+        var result = input.ConvertToUrl();
+
+        // Assert
+        result.Should().BeEquivalentTo(expected);
+    }
+    
     [Fact]
     public void Generated_Url_Cannot_End_With_Space_Replacement_Character()
     {
@@ -157,5 +171,4 @@ public class StringToUrlTests
         // Assert
         result.Should().BeEquivalentTo(expected);
     }
-    
 }

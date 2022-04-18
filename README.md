@@ -10,7 +10,7 @@ Output: ```charlie-puth-thats-hilarious```
 
 ### Why I have written this
 
-This is a common feature I use for generating URLs from strings which could be of use for others.
+This is a common feature I use for generating URLs from strings which could be of use for others. Replacing diacritics, cleaning out non alphanumeric characters and properly formatting a string into a proper URL/path can be fiddly. This library helps solve that by making it as easy as calling an extension method to string.
 
 ### How to use / what this does
 
@@ -48,10 +48,10 @@ You can pass through a `UrlOptions` object to `string.ConvertToUrl()` to overrid
 | Option                                 | Description                                                                                                                                                                                                                                                                                    |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `SpaceReplacementCharacter`<br/>string | By default spaces are replaced with a dash. You can override this with any value.                                                                                                                                                                                                              |
-| `Case`<br/>StringCase enum             | By default the returned URL is converted to lowercase. You can override this with:<br/>`StringCase.UPPER` - returns the string in all uppercase<br/>`StringCase.UNCHANGED` - returns the string without any case change<br/>`StringCase.LOWER` - default - returns the string in all lowercase |
+| `Case`<br/>StringCase enum             | By default the returned URL is converted to lowercase. You can override this with:<br/>`StringCase.Upper` - returns the string in all uppercase<br/>`StringCase.Unchanged` - returns the string without any case change<br/>`StringCase.Lower` - default - returns the string in all lowercase |
 | `MaxLength`<br/>int                    | By default the entire input string is converted and then returned. You can choose to set a max character length by setting this.<br/>Note: if the ending character is a `SpaceReplacementCharacter` this is removed so that the returned URL does not end in a dash for example.               |
 | `Append`<br/>string                    | Add to the end of the generated URL path.                                                                                                                                                                                                                                                      |
-| `Prepend`<br/>string                   | Add to the start of the generated URL path. Eg: your domain. |
+| `Prepend`<br/>string                   | Add to the start of the generated URL path. Eg: your domain.                                                                                                                                                                                                                                   |
 
 Any of these options can be set without others being set.
 
