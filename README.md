@@ -1,6 +1,6 @@
 # String To Url
 
-This NuGet library contains an extension method to turn any string into a string which can be used in an URL. A practical example is how I use this on [Musicstax](https://musicstax.com) where I take track, artist or playlist names and turn them into a URL.
+This [NuGet library](https://www.nuget.org/packages/Stax.StringToUrl/) contains an extension method to turn any string into a string which can be used in an URL. A practical example is how I use this on [Musicstax](https://musicstax.com) where I take track, artist or playlist names and turn them into a URL.
 
 Example:
 
