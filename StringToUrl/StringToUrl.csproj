@@ -5,14 +5,19 @@
         <Nullable>enable</Nullable>
         <LangVersion>10</LangVersion>
         <Title>String to Url</Title>
+        <Version>1.0.0</Version>
         <Authors>Luke Mansell</Authors>
+        <Description>Extension method to convert any string into a dash seperated string to be used for a URL. Eg: hello world is turned into hello-world. Non alpha numeric characters are stripped and diacritics are removed too.</Description>
+        <Copyright>Copyright (c) Luke Mansell // Stax Ventures</Copyright>
+        <PackageProjectUrl>https://github.com/lukemansell/string-to-url.git</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/lukemansell/string-to-url.git</RepositoryUrl>
         <RepositoryType>GitHub</RepositoryType>
         <Company>Pixelstax</Company>
+        <PackageTags>url;string;path;website;domain;generator;</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <Copyright>Copyright (c) Luke Mansell // Stax Ventures</Copyright>
-        <Description>Extension method to convert any string into a dash seperated string to be used for a URL. Eg: hello world is turned into hello-world. Non alpha numeric characters are stripped and diacritics are removed too.</Description>
         <PackageId>Stax.StringToUrl</PackageId>
+        <PackageIconUrl>icon.png</PackageIconUrl>
     </PropertyGroup>
 
     <ItemGroup>

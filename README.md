@@ -20,7 +20,7 @@ There are two ways to use StringToUrl.
 * With the default options
 * By overriding options with a `UrlOptions` object
 
-####With  default options
+#### With  default options
 On any string you can do:
 
 ```string.ConvertToUrl()```

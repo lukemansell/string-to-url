@@ -26,10 +26,10 @@ public class UrlOptions
     /// <summary>
     /// Add to the end of the generated URL
     /// </summary>
-    public string? Append { get; set; } = null;
+    public string? Append { get; set; }
 
     /// <summary>
     /// Add to the start of the generated URL. Eg: your domain
     /// </summary>
-    public string? Prepend { get; set; } = null;
+    public string? Prepend { get; set; }
 }
