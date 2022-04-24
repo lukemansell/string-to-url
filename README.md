@@ -1,5 +1,8 @@
 # String To Url
 
+[![Version](https://img.shields.io/nuget/vpre/stax.stringtourl.svg)](https://www.nuget.org/packages/stax.stringtourl)
+[![Downloads](https://img.shields.io/nuget/dt/stax.stringtourl.svg)](https://www.nuget.org/packages/stax.stringtourl)
+
 This [NuGet library](https://www.nuget.org/packages/Stax.StringToUrl/) contains an extension method to turn any string into a string which can be used in an URL. A practical example is how I use this on [Musicstax](https://musicstax.com) where I take track, artist or playlist names and turn them into a URL.
 
 Example:
